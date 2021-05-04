@@ -1,0 +1,115 @@
+html {font-size: 16px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color: rgb(213, 136, 49);
+    text-align: center;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+img {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid rgb(17, 153, 89);
+}
+
+p {
+    font-size: 0.5rem;
+}
+
+a {
+    color: rgb(213, 136, 49);
+}
+
+a:hover {
+    color: blue;
+}
+
+article:first-child {
+    text-align: center;
+    
+}
+
+section:first-child{
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(17, 153, 89);
+    border: solid white;
+    border-radius: 2rem;
+    color: white;
+
+}
+
+article:last-child{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    font-size: 0.87rem;
+}
+
+section:last-child{
+        color: rgb(213, 136, 49);
+        border: solid rgb(17, 153, 89);
+        border-radius: 2em;
+        
+}
+
+@media (max-width: 400px) and (orientation: portrait) {
+    body {
+        background-color: transparent;
+        color: black;
+      }
+  
+      article:last-child{
+          display: inline-block;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+}
+
+@media (max-width: 700px) and (orientation: portrait) {
+    body {
+        background-color: transparent;
+        color: black;
+      }
+  
+      article:last-child{
+          display: inline-block;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+}
+  
+  @media (max-width: 700px) and (orientation: landscape) {
+    body {
+      background-color: transparent;
+      color: black;
+    }
+
+    article:last-child{
+        display: inline-block;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+      }
+  }
